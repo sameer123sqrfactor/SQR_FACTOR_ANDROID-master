@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9f9f9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_layout"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/content_layout"
+                android:layout_below="@+id/toolbar">
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="#fff9f9f9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginStart="16sp"
+                        android:text="Design Title"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"/>
+
+                    <EditText
+                        android:id="@+id/submit_design_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginStart="15sp"
+                        android:paddingStart="15sp"
+                        android:paddingEnd="15sp"
+                        android:layout_marginEnd="15sp"
+                        android:background="@drawable/text__box_background"
+                        android:hint="@string/design_title"
+                        android:inputType="text"
+                        android:textSize="@dimen/text14"
+                        android:fontFamily="@font/montserrat"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/imageViewFormServer"
+                        android:visibility="gone"
+                        android:layout_height="180dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginStart="16sp"
+                        android:text="Design Cover Image"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat"/>
+
+                    <RelativeLayout
+                        android:id="@+id/submit_design_cover_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginEnd="15sp"
+                        android:background="@drawable/text__box_background"
+                        android:paddingStart="15sp"
+                        android:paddingEnd="15sp"
+                        android:layout_marginBottom="20sp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/camera_"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="4dp"
+                            android:src="@drawable/camera"
+                            android:layout_marginLeft="4dp"/>
+
+                        <TextView
+                            android:id="@+id/submit_design_cover_image_path"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no_file_chosen"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="@dimen/text14"
+                            android:textColor="#ff686868"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/camera_"
+                            android:layout_toEndOf="@+id/camera_"
+                            android:paddingStart="8dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_attach_file_black_24dp"
+                            android:layout_gravity="end|center_vertical"/>
+
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/sqrfactor_editor_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:backgroundTint="@color/sqr"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingEnd="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp"
+                        android:paddingStart="10sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="User Sqrfactor Editor"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginEnd="15sp"
+                        android:text="--------------------- OR ----------------------"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                    <Button
+                        android:id="@+id/pdf_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:backgroundTint="@color/sqr"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingEnd="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp"
+                        android:paddingStart="10sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Upload PDF"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"/>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

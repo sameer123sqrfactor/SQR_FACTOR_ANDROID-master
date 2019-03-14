@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/slide1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="55dp"
+        android:text="Brand Yourself"
+        android:textAllCaps="false"
+        android:textColor="#ff000000"
+        android:textSize="30sp"
+        android:fontFamily="@font/abril_fatface"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Your presence on the internet is more important than ever. An individual architect, interior designer or young architecture firm - promoting yourself on the right platform can help you make it big in the real game."
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#ff565656"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:letterSpacing="0.14"/>
+
+
+
+</LinearLayout>
+

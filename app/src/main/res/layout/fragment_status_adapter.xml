@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="5sp"
+    android:background="@drawable/gray_border"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/news_post_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.comix.rounded.RoundedCornerImageView
+                    android:id="@+id/news_auth_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="16sp"
+                    android:layout_marginStart="20sp"
+                    app:cornerRadius="4dp"
+                    android:src="@drawable/sqr2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="18dp"
+                        android:layout_weight="3"
+                        android:layout_marginStart="16sp">
+
+                        <TextView
+                            android:id="@+id/news_auth_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Henry Cavill"
+                            android:textColor="#ff040404"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/news_post_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="5 minutes ago"
+                            android:textColor="#ff8f8f8f"
+                            android:textSize="12sp"
+                            android:textAllCaps="true"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="29dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/news_post_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_more"
+                            android:layout_gravity="center"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:paddingLeft="22sp"
+                android:paddingStart="22sp"
+                android:paddingRight="10sp"
+                android:paddingEnd="22sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/news_post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="@dimen/text14"
+                    android:textColor="#ff484848"
+                    android:visibility="visible"
+                    android:text="hello everone"/>
+
+                <TextView
+                    android:id="@+id/news_post_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/sqr"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="3dp"
+                    android:text="Architecture"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/news_post_image"
+                android:layout_marginTop="7sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sqr2"
+                android:scaleType="fitXY"
+                android:background="@drawable/post_image_background"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/news_short_Descrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="19sp"
+                android:text="Take up one idea.make that one idea your life think of in your life think of it."
+                android:maxLines="2"
+                android:textColor="#ff8f8f8f"
+                android:layout_marginTop="5sp"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10sp"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="40sp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/news_post_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:button="@null"
+                        android:checked="false"
+                        android:stateListAnimator="@animator/scale"
+                        android:background="@drawable/news_like"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:id="@+id/news_post_likeList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:background="@android:color/transparent"
+                        android:text="2 Like"
+                        android:textAllCaps="false"
+                        android:textColor="#ff8f8f8f"
+                        android:fontFamily="@font/montserrat"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="40sp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:id="@+id/commentCheckBox"
+                        android:button="@null"
+                        android:checked="false"
+                        android:stateListAnimator="@animator/scale"
+                        android:background="@drawable/ic_commentbtn"
+                        android:focusable="true"/>
+                    <TextView
+                        android:id="@+id/news_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comment"
+                        android:textColor="#ff8f8f8f"
+                        android:layout_marginStart="10sp"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/montserrat"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_height="40sp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/news_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="10sp"
+                        android:drawableStart="@drawable/ic_share_square"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center"
+                        android:text="Share"
+                        android:textAllCaps="false"
+                        android:textColor="#ff8f8f8f"
+                        android:fontFamily="@font/montserrat"
+                        android:drawableLeft="@drawable/ic_share_square" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/news_comment_card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/news_comment_image1"
+                    android:layout_width="0sp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/avatar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:layout_marginStart="7sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5sp"
+                    android:background="@drawable/comment_background">
+
+                    <TextView
+                        android:id="@+id/news_comment_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Henry Cavill"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginTop="4sp"
+                        android:textColor="#ff040404"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_bold"/>
+
+                    <TextView
+                        android:id="@+id/news_comment_descrip1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginBottom="4sp"
+                        android:text="Nice work there!"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/news_comment_menu1"
+                    android:layout_width="24sp"
+                    android:visibility="gone"
+                    android:layout_height="24sp"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/ic_more_verticle"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5sp"
+                android:layout_marginStart="80sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:id="@+id/news_comment_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just Now"
+                    android:layout_gravity="center"
+                    android:textColor="#ff686868"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/news_commnent_like1"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:clickable="true"
+                    android:button="@null"
+                    android:checked="false"
+                    android:layout_gravity="center"
+                    android:stateListAnimator="@animator/scale"
+                    android:background="@drawable/news_like"
+                    android:focusable="true"
+                    android:layout_marginLeft="3dp" />
+                <TextView
+                    android:id="@+id/news_comment_likeList1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="@dimen/text12"
+                    android:text="0 Like"
+                    android:textAllCaps="false"
+                    android:textColor="#ff686868" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/news_comment_card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/news_comment_image2"
+                    android:layout_width="0sp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:src="@drawable/avatar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:layout_marginStart="7sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5sp"
+                    android:background="@drawable/comment_background">
+
+                    <TextView
+                        android:id="@+id/news_comment_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Henry Cavill"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginTop="4sp"
+                        android:textColor="#ff040404"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_bold"/>
+
+                    <TextView
+                        android:id="@+id/news_comment_descrip2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13sp"
+                        android:layout_marginBottom="4sp"
+                        android:text="Nice work there!"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/news_comment_menu2"
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:visibility="gone"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/ic_more_verticle"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5sp"
+                android:layout_marginStart="80sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:id="@+id/news_comment_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just Now"
+                    android:layout_gravity="center"
+                    android:textColor="#ff686868"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="12sp"/>
+
+                <CheckBox
+                    android:id="@+id/news_commnent_like2"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:clickable="true"
+                    android:button="@null"
+                    android:checked="false"
+                    android:layout_gravity="center"
+                    android:stateListAnimator="@animator/scale"
+                    android:background="@drawable/news_like"
+                    android:focusable="true"
+                    android:layout_marginLeft="3dp" />
+                <TextView
+                    android:id="@+id/news_comment_likeList2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="@dimen/text12"
+                    android:text="0 Like"
+                    android:textAllCaps="false"
+                    android:textColor="#ff686868" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingLeft="22sp"
+            android:paddingRight="22sp">
+
+            <com.comix.rounded.RoundedCornerImageView
+                android:id="@+id/news_user_imageProfile"
+                android:layout_width="40dp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                app:cornerRadius="4sp"
+                android:src="@drawable/sqr2"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginLeft="7sp">
+
+                <EditText
+                    android:id="@+id/news_user_commnentEdit"
+                    android:layout_marginStart="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:hint="Write a comment..."
+                    android:padding="10sp"
+                    android:textSize="@dimen/text12"
+                    android:fontFamily="@font/montserrat"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginLeft="5sp" />
+
+                <TextView
+                    android:id="@+id/news_comment_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:padding="2dp"
+                    android:text="Post"
+                    android:textSize="@dimen/text14"
+                    android:textAllCaps="false"
+                    android:textColor="@color/sqr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="9dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

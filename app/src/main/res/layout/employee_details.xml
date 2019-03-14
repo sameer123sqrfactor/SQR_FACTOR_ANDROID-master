@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9f9f9"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="25sp"
+            android:fontFamily="@font/montserrat"
+            android:text="First Name"
+            android:textColor="#ff686868"
+            android:textSize="@dimen/text12" />
+
+        <TextView
+            android:id="@+id/employee_firm_first_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="11sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="-"
+            android:textColor="#ff202020"
+            android:textSize="@dimen/text14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/text_underline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="25sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Last Name"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:id="@+id/employee_firm_last_name_text"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Attachment"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:id="@+id/employee_firm_attachment_name_text"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Role"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/employee_firm_role_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Phone Number"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/employee_firm_phone_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Adhaar Id"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/employee_firm_aadhaar_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Email Address"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/employee_firm_email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:fontFamily="@font/montserrat"
+                android:text="Country"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/employee_firm_country_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:fontFamily="@font/montserrat"
+                android:text="State"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/employee_firm_state_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginTop="24sp"
+                android:fontFamily="@font/montserrat"
+                android:text="City"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/employee_firm_city_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="@dimen/text14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/text_underline" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

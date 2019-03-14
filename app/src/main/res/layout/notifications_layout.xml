@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gray_line"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <com.comix.rounded.RoundedCornerImageView
+            android:id="@+id/notification_user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cornerRadius="4dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10sp"
+            android:orientation="vertical"
+            android:id="@+id/notification_transfer">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/notification_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Amit"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/notification_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:fontFamily="@font/montserrat"
+                android:maxLines="1"
+                android:textColor="@color/sqr"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/notification_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:fontFamily="@font/roboto"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

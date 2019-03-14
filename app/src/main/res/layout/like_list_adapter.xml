@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5sp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.comix.rounded.RoundedCornerImageView
+        android:id="@+id/like_profileImage"
+        android:layout_width="50dp"
+        android:layout_height="50sp"
+        app:cornerRadius="4sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="5sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginStart="10sp"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/like_auth_name"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Henry Cavill"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#ff202020"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/like_list_followbtn"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/follow_btn"
+            android:text="Follow"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

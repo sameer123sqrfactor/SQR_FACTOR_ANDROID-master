@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/White">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/basic_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sqr"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Documents"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="10sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/line"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+
+
+            <RelativeLayout
+                android:id="@+id/submit_identity_proof_document"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:padding="10sp"
+                android:background="@drawable/shapes"
+                android:layout_marginBottom="10sp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/image_identity_proof"
+                    android:src="@drawable/ic_add_file"
+                    android:layout_marginLeft="4dp"/>
+
+                <TextView
+                    android:id="@+id/text_identity_proof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identity_proof"
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/image_identity_proof"
+                    android:layout_toEndOf="@+id/image_identity_proof"
+                    android:paddingStart="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_identity_proof"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attach_file_black_24dp"
+                    android:layout_gravity="end|center_vertical"/>
+
+
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/identity_proof_image_frame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:layout_marginTop="1dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/submit_identity_proof_document"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/identity_proof_image"/>
+                <ImageButton
+                    android:id="@+id/identity_proof_image_remove"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_close" />
+
+            </FrameLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/submit_graduation_certificate_document"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:padding="10sp"
+                android:background="@drawable/shapes"
+                android:layout_marginBottom="10sp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/image_graduation_certificate"
+                    android:src="@drawable/ic_add_file"
+                    android:layout_marginLeft="4dp"/>
+
+                <TextView
+                    android:id="@+id/text_graduation_certificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graduation_certificate"
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/image_graduation_certificate"
+                    android:layout_toEndOf="@+id/image_graduation_certificate"
+                    android:paddingStart="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_graduation_certificate"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attach_file_black_24dp"
+                    android:layout_gravity="end|center_vertical"/>
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/graduation_certificate_image_frame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:layout_above="@+id/post_buttons"
+                android:layout_marginTop="1dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/submit_identity_proof_document"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/graduation_certificate_image"/>
+
+                <ImageButton
+                    android:id="@+id/graduation_certificate_image_remove"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_close" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/submit_architect_license_document"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:padding="10sp"
+                android:background="@drawable/shapes"
+                android:layout_marginBottom="10sp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/image_architect_license"
+                    android:src="@drawable/ic_add_file"
+                    android:layout_marginLeft="4dp"/>
+
+                <TextView
+                    android:id="@+id/text_architect_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/architect_license"
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/image_architect_license"
+                    android:layout_toEndOf="@+id/image_architect_license"
+                    android:paddingStart="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_architect_license"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attach_file_black_24dp"
+                    android:layout_gravity="end|center_vertical"/>
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/architect_license_image_frame"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="200dp"
+                android:layout_marginTop="1dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/submit_identity_proof_document"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/architect_license_image"/>
+
+                <ImageButton
+                    android:id="@+id/architect_license_image_remove"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_close" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/submit_company_registration_certificate"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:padding="10sp"
+                android:background="@drawable/shapes"
+                android:layout_marginBottom="10sp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/image_company_registration_certificate"
+                    android:src="@drawable/ic_add_file"
+                    android:layout_marginLeft="4dp"/>
+
+                <TextView
+                    android:id="@+id/text_company_registration_certificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_registration_certificate"
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/image_company_registration_certificate"
+                    android:layout_toEndOf="@+id/image_company_registration_certificate"
+                    android:paddingStart="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_image_company_registration_certificate"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attach_file_black_24dp"
+                    android:layout_gravity="end|center_vertical"/>
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/company_registration_image_frame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:layout_marginTop="1dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/company_registration_certificate_image"/>
+
+                <ImageButton
+                    android:id="@+id/company_registration_image_remove"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_close" />
+
+            </FrameLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sqr_factor_btn_color"
+                android:text="Upload"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:layout_margin="10sp"
+                android:layout_gravity="center"
+                android:id="@+id/uploadDocument"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

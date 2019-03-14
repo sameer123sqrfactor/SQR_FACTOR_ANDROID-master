@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <com.comix.rounded.RoundedCornerImageView
+        android:id="@+id/user_image"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_background"
+        android:padding="20dp"
+        app:cornerRadius="4sp"
+        android:elevation="3dp"
+        android:src="@drawable/camera" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="55sp"
+            android:layout_weight="1"
+            android:layout_marginStart="24sp"
+            android:text="Select"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:textSize="@dimen/text14"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:backgroundTint="@color/sqr"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="24sp"
+            android:text="Skip"
+            android:fontFamily="@font/montserrat"
+            android:textSize="@dimen/text14"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>

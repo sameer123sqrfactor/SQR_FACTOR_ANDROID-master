@@ -1,0 +1,158 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/submission_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/no_image_placeholder"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/submission_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12sp"
+                android:layout_weight="2.6"
+                android:maxLines="1"
+                android:text="Design 1"
+                android:textColor="#ff212020"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/submission_menu"
+                android:layout_width="0dp"
+                android:layout_height="24sp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="12sp"
+                android:layout_weight="0.4"
+                android:src="@drawable/ic_more"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/submission_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="5sp"
+            android:fontFamily="@font/montserrat"
+            android:text="YDAS365JQ9"
+            android:textColor="#ff212020"/>
+        <!--<TextView-->
+            <!--android:id="@+id/submission_description"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="15sp"-->
+            <!--android:layout_marginEnd="15sp"-->
+            <!--android:textSize="@dimen/text14"-->
+            <!--android:text="take up  one idea. make that  one idea your life"-->
+            <!--android:textColor="#ff9c9999"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <CheckBox
+                    android:id="@+id/submission_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:button="@null"
+                    android:checked="false"
+                    android:stateListAnimator="@animator/scale"
+                    android:background="@drawable/news_like"
+                    android:focusable="true"/>
+                <TextView
+                    android:id="@+id/submission_likeList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:background="@android:color/transparent"
+                    android:text="0 Like"
+                    android:textAllCaps="false"
+                    android:textColor="#ff8f8f8f"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginLeft="10sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingStart="5sp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/submission_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5sp"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/ic_commentbtn"
+                    android:drawableLeft="@drawable/ic_commentbtn"
+                    android:fontFamily="@font/montserrat"
+                    android:text="0 Comment"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/tertiary_text_dark" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/submission_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="5sp"
+                    android:drawableStart="@drawable/ic_share_square"
+                    android:gravity="start|center_vertical"
+                    android:text="Share"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/tertiary_text_dark"
+                    android:fontFamily="@font/montserrat"
+                    android:drawableLeft="@drawable/ic_share_square" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

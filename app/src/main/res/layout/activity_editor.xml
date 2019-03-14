@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@drawable/gradient">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backgroundbuttonwhite"
+        android:text="Submit"
+        android:id="@+id/submitArticleBtn"
+        android:textColor="@color/sqr"
+        android:textAllCaps="false"
+        android:padding="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/fullContentView"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/videoFrameLayout"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/video_post_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_close"/>
+        <WebView
+            android:layout_width="match_parent"
+            android:id="@+id/articleVideoView"
+            android:layout_height="250dp"
+            tools:ignore="WebViewLayout" />
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/videoFrameLayout">
+
+        <com.github.irshulx.Editor
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="50dp"
+            app:placeholder="Type your text, add pictures and videos link here..."
+            app:render_type="Editor" />
+    </ScrollView>
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/article_insert_image"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_add_a_photo" />
+        <ImageButton
+            android:id="@+id/article_insert_video"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_video" />
+
+        <ImageButton
+            android:id="@+id/article_insert_link"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_insert_link" />
+
+        <ImageButton
+            android:id="@+id/article_text_italic"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_format_italic" />
+
+        <ImageButton
+            android:id="@+id/article_text_bold"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_format_bold_24dp" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

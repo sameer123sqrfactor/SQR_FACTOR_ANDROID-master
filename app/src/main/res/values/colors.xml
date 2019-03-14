@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4747</color>
+    <color name="colorPrimaryDark">#ff4747</color>
+    <color name="colorAccent">#ff4747</color>
+    <color name="sqr">#ff4747</color>
+    <color name="gray">#878585</color>
+    <color name="tab_bg">#fafbfd</color>
+    <color name="White">#FFF</color>
+    <color name="line">#ece6f5</color>
+    <color name="border">#FF9C9C9C</color>
+    <color name="black">#000</color>
+    <color name="colorPrimarytrans">#00f44336</color>
+    <color name="green">#58f843</color>
+
+    <color name="dot_dark_screen1">#878585</color>
+    <color name="dot_dark_screen2">#878585</color>
+    <color name="dot_dark_screen3">#878585</color>
+    <color name="dot_dark_screen4">#878585</color>
+
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#ff4747</color>
+    <color name="dot_light_screen2">#ff4747</color>
+    <color name="dot_light_screen3">#ff4747</color>
+    <color name="dot_light_screen4">#ff4747</color>
+    <color name="grey_btn">#ffc0c0c0</color>
+    <color name="sqr_fade">#EB3E42</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+
+</resources>

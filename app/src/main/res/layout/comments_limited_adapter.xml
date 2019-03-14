@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:orientation="horizontal">
+
+        <com.comix.rounded.RoundedCornerImageView
+            android:id="@+id/commenterProfileImage"
+            android:layout_marginStart="16dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/comment_background"
+            android:layout_marginStart="12sp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/commenterUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:paddingStart="10dp"
+                android:paddingTop="7dp"
+                android:paddingEnd="63dp"
+                android:text="Henry Cavill"
+                android:textColor="#ff0e0e0e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/commentBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Well Done"
+                android:paddingTop="3dp"
+                android:paddingStart="10dp"
+                android:paddingBottom="7dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="#ff777777"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/comment_menu"
+            android:layout_width="20sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:visibility="gone"
+            android:src="@drawable/ic_more_verticle"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/timeAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just now"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="12sp"
+            android:textColor="#ff504f4f"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="70sp"/>
+
+        <CheckBox
+            android:id="@+id/commentLike"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:checked="false"
+            android:stateListAnimator="@animator/scale"
+            android:background="@drawable/news_like"
+            android:focusable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberOfLike"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+            android:textColor="#ff504f4f"
+            android:fontFamily="@font/open_sans_semibold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="0 Like"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cecbcb"/>
+</LinearLayout>

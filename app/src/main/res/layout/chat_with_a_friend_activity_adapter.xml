@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingLeft="15dp"
+        android:visibility="gone"
+        android:paddingRight="60dp"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.comix.rounded.RoundedCornerImageView
+                android:id="@+id/chat_frnd_profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="bottom" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/chat_frnd_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignTop="@+id/chat_frnd_profile"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_toRightOf="@+id/chat_frnd_profile"-->
+            <!--android:paddingBottom="4dp"-->
+            <!--android:text="Amit" />-->
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/your_msg"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="10dp"
+                >
+            <TextView
+                android:id="@+id/frnd_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_below="@+id/chat_frnd_name"
+                android:layout_alignLeft="@+id/chat_frnd_name"
+                android:background="@drawable/your_msg"
+                android:elevation="2dp"
+                android:layout_marginStart="13dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:textColor="#ff9c9999"
+                android:textSize="@dimen/text14" />
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:id="@+id/frnd_chat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/chat_frnd_profile"
+                android:text="time ago" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/frnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingRight="16dp"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        android:gravity="end"
+        android:id="@+id/my">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/chat_my_image"-->
+        <!--android:layout_width="34dp"-->
+        <!--android:layout_height="34dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/chat_image"-->
+        <!--android:scaleType="centerInside"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/chat_my_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toLeftOf="@+id/chat_my_image"-->
+        <!--android:layout_alignTop="@+id/chat_my_image"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:paddingBottom="4dp"-->
+        <!--android:text="Sqrfactor" />-->
+
+        <TextView
+            android:id="@+id/chat_my_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_message"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="#ffffffff"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

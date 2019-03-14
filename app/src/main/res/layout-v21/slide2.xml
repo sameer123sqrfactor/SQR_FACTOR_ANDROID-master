@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/slide2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="55dp"
+        android:text="Discover content"
+        android:textAllCaps="false"
+        android:textColor="#ff000000"
+        android:textSize="30sp"
+        android:fontFamily="@font/abril_fatface"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Immerse yourself in content relevant to your interest. Discover what’s trending and performed well in the past few hours up to days. Follow Influencer whose work inspires you."
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#ff565656"
+        android:paddingLeft="15dp"
+        android:paddingEnd="15dp"
+        android:letterSpacing="0.14"/>
+
+
+
+</LinearLayout>

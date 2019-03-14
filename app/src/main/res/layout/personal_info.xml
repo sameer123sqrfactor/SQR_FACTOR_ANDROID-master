@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9f9f9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#ffffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="16sp"
+            android:textSize="@dimen/text12"
+            android:fontFamily="@font/montserrat"
+            android:text="Name"
+            android:textColor="#ff686868"/>
+
+        <TextView
+            android:id="@+id/about_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:textSize="@dimen/text14"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="-"
+            android:layout_marginEnd="11sp"
+            android:textColor="#ff202020"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/text_underline"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:layout_marginStart="16sp"
+                android:textSize="@dimen/text12"
+                android:fontFamily="@font/montserrat"
+                android:text="Followers"
+                android:textColor="#ff686868"/>
+
+            <TextView
+                android:id="@+id/about_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="11sp"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="-"
+                android:textColor="#ff202020"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text_underline"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="16sp"
+            android:textSize="@dimen/text12"
+            android:fontFamily="@font/montserrat"
+            android:text="Following"
+            android:textColor="#ff686868"/>
+
+        <TextView
+            android:id="@+id/about_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="11sp"
+            android:textSize="@dimen/text14"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="-"
+            android:textColor="#ff202020"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/text_underline"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

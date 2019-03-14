@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff9f9f9">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fName"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/fNametext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:hint="First Name*"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lName"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/lNametext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Last Name*"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/Emailtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email" />
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email1"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/Emailtext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email" />
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email2"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/Emailtext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email3"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/Emailtext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/AddEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/sqr_factor_btn_color"
+                android:text="Add Email"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/mobileText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Mobile Number"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/dateOfBirthText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Date Of Birth"
+                    android:inputType="date"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/linerGender"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16sp"
+                    android:text="Select Gender*"
+                    android:textSize="14sp"
+                    android:textColor="#ff686868"
+                    android:fontFamily="@font/montserrat"/>
+
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"
+                    android:fontFamily="@font/montserrat" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/UID"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/UIDtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="UID"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/UID"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16sp"
+                android:id="@+id/selectOccupation"
+                android:text="Select Occupation*"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Architect"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="#ff686868"
+                android:layout_below="@+id/selectOccupation"
+                android:id="@+id/checkbox1"
+                android:checked="false"
+                android:layout_marginLeft="5dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design Student"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="#ff686868"
+                android:layout_below="@+id/checkbox1"
+                android:id="@+id/checkbox2"
+                android:checked="false"
+                android:layout_marginLeft="5dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acadmeciane"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="#ff686868"
+                android:layout_below="@+id/checkbox2"
+                android:id="@+id/checkbox3"
+                android:checked="false"
+                android:layout_marginLeft="5dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interior Design"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="#ff686868"
+                android:layout_below="@+id/checkbox3"
+                android:id="@+id/checkbox4"
+                android:checked="false"
+                android:layout_marginLeft="5dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landscape Architect"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="#ff686868"
+                android:layout_below="@+id/checkbox4"
+                android:id="@+id/checkbox5"
+                android:checked="false"
+                android:layout_marginLeft="5dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="16sp"
+                android:layout_marginStart="16dp"
+                android:textColor="#ff686868"
+                android:layout_below="@+id/checkbox5"
+                android:id="@+id/checkbox6"
+                android:checked="false"
+                android:layout_marginLeft="5dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/otherOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="65sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/text__box_background">
+                    <!--app:hintTextAppearance="#ff959595">-->
+
+                    <EditText
+                        android:id="@+id/otherOccupationtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#ff211e1e"
+                        android:textSize="@dimen/text14"
+                        android:hint="Other Name*"
+                        android:inputType="text"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/AddOccupation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/sqr_factor_btn_color"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Select Country*"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16sp"
+                    android:textSize="14sp"
+                    android:textColor="#ff686868"
+                    android:fontFamily="@font/montserrat"/>
+
+                <Spinner
+                    android:id="@+id/Country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"
+                    android:fontFamily="@font/montserrat"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerState"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16sp"
+                    android:textSize="14sp"
+                    android:textColor="#ff686868"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Select State*"/>
+
+                <Spinner
+                    android:id="@+id/State"
+                    android:layout_marginStart="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"
+                    android:fontFamily="@font/montserrat"
+                    android:entries="@array/countries"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linerCity"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16sp"
+                    android:textSize="14sp"
+                    android:textColor="#ff686868"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Select City*"/>
+
+                <Spinner
+                    android:id="@+id/City"
+                    android:layout_marginStart="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text16"
+                    android:fontFamily="@font/montserrat"
+                    android:entries="@array/countries"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/shortBio"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/text__box_background"
+                app:hintTextAppearance="@color/colorPrimary">
+
+                <EditText
+                    android:id="@+id/shortBioTecxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:hint="Short Bio (150 words)"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginTop="16sp"
+                    android:textSize="14sp"
+                    android:textColor="#ff686868"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/facebookLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/facebookLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Facebook Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/TwitterLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/TwitterLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Twitter Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/LinkedinLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/LinkedinLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Linkedin Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/InstagramLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/InstagramLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Instagram Link"
+                    android:inputType="text"
+                    android:padding="5sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/SaveandNext"
+                android:text="@string/save_next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/sqr_factor_btn_color"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

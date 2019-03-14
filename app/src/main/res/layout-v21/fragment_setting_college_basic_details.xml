@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff9f9f9">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_name"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Name Of The College/University*"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_email"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email*"
+                    android:inputType="textEmailAddress"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/college_AddEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/sqr_factor_btn_color"
+                android:fontFamily="@font/montserrat"
+                android:text="Add Email"
+                android:textColor="@color/white"
+                android:textAllCaps="false" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_mobile_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Mobile Number*"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/college_linerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text16"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_gravity="center"
+                    android:text="Select Country"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/college_Country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/countries"
+                    android:layout_marginStart="5sp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/college_linerState"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text16"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_gravity="center"
+                    android:text="Select State"
+                    android:textSize="14sp"/>
+
+                <Spinner
+                    android:id="@+id/college_State"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/countries"
+                    android:layout_marginStart="15sp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/college_linerCity"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text16"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_gravity="center"
+                    android:text="Select City"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/college_City"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/countries"
+                    android:layout_marginStart="15sp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_shortBio"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_shortBioText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Short Bio (150 words)"
+                    android:inputType="text"
+                    android:textSize="@dimen/text14"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_university_name"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_university_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="College/University Name"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_registerNumber"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_registerNumber_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="College/University Registration Number"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_facebookLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_facebookLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Facebook Link"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_TwitterLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_TwitterLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Twitter Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_LinkedinLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_LinkedinLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Linkedin Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/college_InstagramLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/college_InstagramLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Instagram Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp">
+
+                <Button
+                    android:id="@+id/college_save_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sqr_factor_btn_color"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="@string/save_next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

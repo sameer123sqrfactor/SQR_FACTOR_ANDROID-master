@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Verification Code"
+        android:textColor="#ff0d0c0c"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:text="Please type the verification code sent to +91-987654321"
+        android:id="@+id/textmobile"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#ff686868"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/white"
+        android:id="@+id/otp_progress_bar"/>
+
+
+    <com.alahammad.otp_view.OtpView
+        android:id="@+id/otpview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textColor="#ff686868"
+        app:otp_number="6"/>
+
+
+    <Spinner
+        android:id="@+id/userType"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_margin="10sp"
+        android:visibility="gone"
+        android:foreground="@drawable/gray_border"
+        android:padding="5sp"
+        android:entries="@array/user_choices"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I didn't get a code"
+            android:textAllCaps="false"
+            android:textColor="#ff686868"
+            android:textSize="@dimen/text14"/>
+
+        <TextView
+            android:id="@+id/resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:text="Resend"
+            android:textAllCaps="false"
+            android:textColor="@color/sqr"
+            android:textSize="@dimen/text14"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otpTime"
+        android:layout_marginTop="20sp"
+        android:textAllCaps="false"
+        android:text="12"
+        android:textColor="#ff686868"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="75sp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/skip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:fontFamily="@font/montserrat"
+            android:textAllCaps="false"
+            android:textColor="@color/sqr"
+            android:background="@drawable/text__box_background"
+            />
+        <Button
+            android:id="@+id/validate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Validate"
+            android:fontFamily="@font/montserrat"
+            android:textAllCaps="false"
+            android:textColor="@color/sqr"
+            android:background="@drawable/text__box_background"
+            />
+    </LinearLayout>
+</LinearLayout>

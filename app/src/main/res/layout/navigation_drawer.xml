@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@drawable/menu_background"
+    android:visibility="gone">
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="180dp"-->
+    <!--android:background="@drawable/home_banner"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingTop="75dp"
+        android:paddingBottom="75dp">
+
+        <com.comix.rounded.RoundedCornerImageView
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="21dp"
+            android:background="@drawable/image_background"
+            app:cornerRadius="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sqr2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25sp"
+            android:orientation="vertical"
+            android:id="@+id/notification_transfer">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/menu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingLeft="2dp"
+                    android:text="Amit Maheshwari "
+                    android:textColor="#ff202020"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/menu_designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="Architecture Designer"
+                android:fontFamily="@font/montserrat"
+                android:maxLines="1"
+                android:textColor="#ff616161"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+

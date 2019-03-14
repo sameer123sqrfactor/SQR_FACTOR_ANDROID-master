@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff9f9f9">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        tools:context=".Activities.ArticleActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:id="@+id/content_layout"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/paid_comp_commission"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="@dimen/text14"
+                android:text="All participating members should have an account on SqrFactor's platform."
+                android:textColor="@color/sqr"/>
+
+
+            <TextView
+                android:id="@+id/participate_team_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:text="Team Members"
+                android:visibility="visible"
+                android:textSize="16sp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15sp"
+                    android:id="@+id/participate_participant1"
+                    android:background="@android:color/transparent"
+                    android:hint="Participant"
+                    android:textSize="@dimen/text14"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="none"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/participant1_layout"
+                android:background="@drawable/white_button"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10sp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/participant1_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/sqr2"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/participant1_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginTop="10sp"
+                        android:textStyle="bold"
+                        tools:text="hackerkernel"/>
+
+                    <TextView
+                        android:id="@+id/participant1_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colorPrimary"
+                        tools:text="hello@hackerkernel.com"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text__box_background">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15sp"
+                    android:id="@+id/participate_participant2"
+                    android:background="@android:color/transparent"
+                    android:hint="Participant"
+                    android:textSize="@dimen/text14"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/participant2_layout"
+                android:background="@drawable/text__box_background"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/participant2_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/avatar"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/participant2_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+                        tools:text="hackerkernel"/>
+
+                    <TextView
+                        android:id="@+id/participant2_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colorPrimary"
+                        tools:text="hello@hackerkernel.com"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/participate_remove_p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_close_black_24dp"/>
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text__box_background">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/participate_participant3"
+                    android:background="@android:color/transparent"
+                    android:hint="Participant"
+                    android:layout_marginStart="15sp"
+                    android:textSize="@dimen/text14"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/participant3_layout"
+                android:background="@drawable/white_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="10sp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/participant3_image"
+                    android:layout_width="60dp"
+                    android:src="@drawable/sqr2"
+                    android:layout_height="60dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/participant3_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/montserrat"
+                        android:textStyle="bold"
+                        tools:text="hackerkernel"/>
+
+                    <TextView
+                        android:id="@+id/participant3_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colorPrimary"
+                        tools:text="hello@hackerkernel.com"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/participate_remove_p3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_close_black_24dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/participate_mentor_tv"
+                android:visibility="visible"
+                android:layout_marginTop="16dp"
+                android:text="Mentor"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/text__box_background">
+
+                <android.support.v7.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/participate_mentor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Mentor"
+                    android:layout_marginStart="15sp"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="@dimen/text14"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/participate_team_members_layout">
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/participate_mentor_layout">
+
+
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mentor_layout"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/white_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/mentor_image"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/sqr2"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mentor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/montserrat"
+                            android:textStyle="bold"
+                            tools:text="hackerkernel"/>
+
+                        <TextView
+                            android:id="@+id/mentor_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/sqr"
+                            tools:text="hello@hackerkernel.com"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/participate_remove_mentor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_close_black_24dp"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:id="@+id/participate_confirm"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:backgroundTint="@color/sqr"
+                android:text="@string/confirm_n_participate"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+               android:fontFamily="@font/montserrat_bold"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

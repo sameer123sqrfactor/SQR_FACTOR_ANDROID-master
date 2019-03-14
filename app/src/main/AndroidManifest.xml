@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.user.sqrfactor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.CAMERA" -->
+    <!-- android:required="true" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".Application.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.LoginAndSignUp.TestingApi">
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+        <activity android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.FacebookSignupActivity" /> <!-- Used for Google Play Store Campaign Measurement -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.UploadProfileImageActivity" >
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+
+        <activity android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.SocialSignUpPageActivity" />
+        <activity android:name=".Activities.UploadDocumentActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity android:name=".Activities.DocumentUpload" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Activities.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.LoginScreen"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_aOXJg165zL1wQQ" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyASLTnvh_YOPT_icOuy7KOR0sOU9uLE0ok" /> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAqeFLrJIQWNrJ_UNZoP0HdQ1XsHWIgVkA" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- <activity -->
+        <!-- android:name="com.facebook.FacebookActivity" -->
+        <!-- android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!--  -->
+        <!-- <activity -->
+        <!-- android:name="com.facebook.CustomTabActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+        <!-- <data android:scheme="@string/fb_login_protocol_scheme" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!--  -->
+        <!--  -->
+        <activity
+            android:name=".Activities.HomeScreen"
+            android:label="feeds"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.Index" />
+        <activity
+            android:name=".Activities.RedActivity"
+            android:label="What&apos;s Red?"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ToolbarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Credits"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SettingModule.SettingViews.Activities.Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ProfessionalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.OtherDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EducationDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.BasicDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ContributorsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LandingPageActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.DesignActivity"
+            android:hardwareAccelerated="true"
+            android:label="Design"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Activities.ArticleActivity"
+            android:hardwareAccelerated="true"
+            android:label="Article"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.EditorActivity"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ResetPassword"
+            android:label="Reset Password"
+            android:parentActivityName=".Activities.LoginAndSignUp.LoginAndSignUpViews.LoginScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:label="Profile"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CommentsPage"
+            android:label="Comments"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CompetitionsActivity"
+            android:label="Competitions"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.jobs.JobActivity"
+            android:label="Jobs/Internships"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EventsActivity"
+            android:label="Events"
+            android:parentActivityName=".Activities.HomeScreen" />
+        <activity
+            android:name=".Activities.PostEventActivity"
+            android:label="Post Event"
+            android:parentActivityName=".Activities.EventsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PostJobActivity"
+            android:label="Post Job"
+            android:parentActivityName=".Activities.jobs.JobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LaunchCompetitionActivity"
+            android:label="Launch a Competition"
+            android:parentActivityName=".Activities.CompetitionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Launch2Activity"
+            android:label="Launch a Competition"
+            android:parentActivityName=".Activities.LaunchCompetitionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CompetitionDetailActivity"
+            android:hardwareAccelerated="true"
+            android:label="Post Article"
+            android:parentActivityName=".Activities.CompetitionsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.SubmitActivity"
+            android:label="Submit"
+            android:parentActivityName=".Activities.CompetitionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.JobDetailsActivity"
+            android:label="Job Details"
+            android:parentActivityName=".Activities.jobs.JobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EventDetailsActivity"
+            android:parentActivityName=".Activities.EventsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.QuestionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.W"
+            android:label="W" />
+        <activity
+            android:name=".Activities.BrowserActivity"
+            android:label="BrowserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.ParticipateActivity"
+            android:label="Participate in Competition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PostEvent2Activity"
+            android:label="Post Event"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Activities.SubmissionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CompetitionEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.JuryEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PartnerEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ApplicantListActivity"
+            android:label="Applicants"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.JuryEditActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Activities.PartnerEditActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Activities.PaymentConfirmActivity"
+            android:label="Payment Confirmation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Submit"
+            android:label="Submit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.About"
+            android:label="About"
+            android:parentActivityName=".Activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FollowersActivity"
+            android:label="Followers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.BlueprintActivity"
+            android:label="Blueprints"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PortfolioActivity"
+            android:label="Portfolios"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FollowingActivity"
+            android:label="Following"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChatWithAFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TopContributors"
+            android:label="Top Contributors"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CompanyFirmDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.EmployeeMemberDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.BasicFirmDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CollegeBasicDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.CollegeDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Design2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FullPostActivity"
+            android:hardwareAccelerated="true"
+            android:label="Full Post"
+            android:parentActivityName=".Activities.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LikeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.StatusPostActivity"
+            android:label="Status"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".Services.MyFirebaseMessagingService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.OTP_Verify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SocialFormActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".Utils.MySMSBroadCastReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activities.UploadPdfEditor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginAndSignUpWithPhoneNumber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.IndiSignupWithEmail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.OrganisationSignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.OnCollegeSignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.IndividualsSignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.CompanySignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginAndSignUp.LoginAndSignUpViews.UsertypeActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

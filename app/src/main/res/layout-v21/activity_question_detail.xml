@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_layout"
+             android:id="@+id/toolbar"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Activities.QuestionDetailActivity">
+
+            <TextView
+                android:id="@+id/question_announced_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:layout_marginEnd="15sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="15sp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/question_askedBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hello skm"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginLeft="15dp" />
+
+            <WebView
+                android:id="@+id/question_detail_desc"
+                android:layout_width="match_parent"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_detail_comment_count"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="15dp"
+                tools:text="0 comments"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/question_detail_rv"
+                android:background="#fff9f9f9"
+                android:layout_width="match_parent"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="50dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp">
+
+        <ImageView
+            android:id="@+id/question_detail_profile"
+            android:layout_width="40dp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:src="@drawable/sqr2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="7sp"
+            android:layout_marginLeft="7sp"
+            android:background="@drawable/edit_text_background">
+
+            <EditText
+                android:id="@+id/question_detail_comment"
+                android:layout_marginStart="5sp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:hint="Write a comment..."
+                android:padding="10sp"
+                android:paddingEnd="50sp"
+                android:textSize="@dimen/text12"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/edit_text_background"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginLeft="5sp"/>
+
+            <TextView
+                android:id="@+id/question_detail_post_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:padding="2dp"
+                android:text="Post"
+                android:textSize="@dimen/text14"
+                android:textAllCaps="false"
+                android:textColor="@color/sqr"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="9dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

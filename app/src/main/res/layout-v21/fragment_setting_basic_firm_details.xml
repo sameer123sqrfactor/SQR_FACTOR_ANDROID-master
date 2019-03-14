@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff9f9f9">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Name Of The Company/Firm*"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_email"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email*"
+                    android:inputType="textEmailAddress"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email1"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/Emailtext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email2"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/Emailtext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email3"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/Emailtext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/company_AddEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sqr_factor_btn_color"
+                android:text="Add Email"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_mobile_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Mobile Number*"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/company_linerCountry"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Country"
+                    android:textSize="14sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"/>
+
+                <Spinner
+                    android:id="@+id/company_Country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/company_linerState"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select State"
+                    android:textSize="14sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"/>
+
+                <Spinner
+                    android:id="@+id/company_State"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text14"
+                    android:layout_marginStart="14sp"
+                    android:layout_gravity="center"
+                    android:entries="@array/countries" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/company_linerCity"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text__box_background"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select City"
+                    android:textSize="14sp"
+                    android:layout_marginStart="16sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"/>
+
+                <Spinner
+                    android:id="@+id/company_City"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_gravity="center"
+                    android:entries="@array/countries"/>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_shortBio"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:background="@drawable/text__box_background">
+
+                <EditText
+                    android:id="@+id/company_shortBioText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="16sp"
+                    android:background="@android:color/transparent"
+                    android:hint="Short Bio (150 words)"
+                    android:textSize="@dimen/text14"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:id="@+id/company_select_linerState"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16sp"
+                android:layout_marginEnd="16sp"
+                android:background="@drawable/text__box_background"
+                android:gravity="center_vertical">
+
+
+                <Spinner
+                    android:id="@+id/company_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginStart="16sp"
+                    android:entries="@array/Company"/>
+
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_firm_name"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_firm_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Firm/Company Name"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_registerNumber"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_registerNumber_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Firm/Company Registration Number"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_facebookLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_facebookLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Facebook Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_TwitterLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_TwitterLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Twitter Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_LinkedinLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_LinkedinLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Linkedin Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/company_InstagramLink"
+                android:layout_width="match_parent"
+                android:layout_height="65sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/text__box_background">
+                <!--app:hintTextAppearance="#ff959595">-->
+
+                <EditText
+                    android:id="@+id/company_InstagramLinktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff211e1e"
+                    android:textSize="@dimen/text14"
+                    android:hint="Instagram Link"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginTop="20sp"
+                    android:id="@+id/company_SaveandNext"
+                    android:textColor="@color/white"
+                    android:text="@string/save_next"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textAllCaps="false"
+                    android:background="@drawable/sqr_factor_btn_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginAndSignUpWithPhoneNumber">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:gravity="center"
+            android:layout_margin="10sp"
+            android:background="@drawable/shapes"
+            android:padding="10sp"
+            app:hintTextAppearance="@color/colorPrimary">
+
+            <EditText
+                android:id="@+id/phoneNumberForLogin_otp_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto"
+                android:hint="Enter otp*"
+                android:inputType="text"
+                android:padding="5sp" />
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/submit_otp_button"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:background="@drawable/sqr_factor_btn_color"/>
+    </LinearLayout>
+
+
+</LinearLayout>

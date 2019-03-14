@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.ArticleActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff9f9f9">
+
+        <include layout="@layout/activity_toolbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:textColor="#ff060606"
+            android:text="Post Design"
+            android:fontFamily="@font/montserrat_bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:textSize="@dimen/text16"
+            android:text="For all architecture designer, Now discuss with community.."/>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/text__box_background"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/designTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="16sp"
+                android:background="@android:color/transparent"
+                android:hint="Title"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/montserrat"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/text__box_background"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/designShortDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="16sp"
+                android:background="@android:color/transparent"
+                android:hint="Short Description"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/montserrat"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/text__box_background"
+            android:layout_gravity="center">
+
+            <fragment
+                android:id="@+id/place_fragment"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+        <Button
+            android:id="@+id/next_design"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/sqr_factor_btn_color"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/montserrat"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

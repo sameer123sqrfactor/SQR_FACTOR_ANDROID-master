@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19sp"
+                    android:text="Sign Up"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ffff4747"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="to Continue!"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#ff686868"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23sp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="20sp"
+                android:textColor="#ff0d0c0c"
+                android:text="Select your Type"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30sp"
+                android:layout_marginStart="22sp"
+                android:layout_marginEnd="22sp"
+                android:text="Indivisual"
+                android:id="@+id/individual_btn"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/white_shadow_button"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="30sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:textColor="#ff9c9999"
+                android:text="There are many variations of passages of Lorem Ipsum available."/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30sp"
+                android:layout_marginStart="22sp"
+                android:layout_marginEnd="22sp"
+                android:text="Company/Firm"
+                android:id="@+id/company_firm_btn"
+                android:textAllCaps="false"
+                android:textColor="#ff0d0c0c"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/white_shadow_button"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="30sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:textColor="#ff9c9999"
+                android:text="There are many variations of passages of Lorem Ipsum available."/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginStart="22sp"
+                android:layout_marginEnd="22sp"
+                android:text="College"
+                android:id="@+id/college_btn"
+                android:textAllCaps="false"
+                android:textColor="#ff0d0c0c"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/white_shadow_button"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="30sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:textColor="#ff9c9999"
+                android:text="There are many variations of passages of Lorem Ipsum available."/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30sp"
+                android:layout_marginStart="22sp"
+                android:layout_marginEnd="22sp"
+                android:text="Organization"
+                android:id="@+id/organisation_btn"
+                android:textAllCaps="false"
+                android:textColor="#ff0d0c0c"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/white_shadow_button"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="30sp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:textColor="#ff9c9999"
+                android:text="There are many variations of passages of Lorem Ipsum available."/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.ArticleActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff9f9f9">
+
+        <include layout="@layout/activity_toolbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:textColor="#ff060606"
+            android:text="Post Article"
+            android:fontFamily="@font/montserrat_bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:textSize="@dimen/text16"
+            android:text="For all architecture designer, Now discuss with community.."/>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_height="60sp"-->
+        <!--android:background="@drawable/gray_border"-->
+        <!--android:layout_margin="10sp"-->
+        <!--android:padding="10sp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/articleSelectBaneerImage"-->
+        <!--android:layout_width="314dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:clickable="true"-->
+        <!--android:hint="Select Banner Image"-->
+        <!--android:inputType="text"-->
+        <!--android:textSize="18dp" />-->
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="24dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/profilepic"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/banner_attachment_image"/>&ndash;&gt;-->
+
+        <!--</LinearLayout>-->
+
+        <FrameLayout
+            android:id="@+id/article_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginStart="16sp"
+            android:layout_marginEnd="16sp"
+            android:background="@drawable/select_image_back"
+            android:layout_above="@+id/post_buttons"
+            android:layout_marginTop="20sp">
+
+            <ImageView
+                android:id="@+id/articleSelectBaneerImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/photo_camera"/>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/cropFinalImage"
+                    android:visibility="visible"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintDimensionRatio="H,16:9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <com.theartofdev.edmodo.cropper.CropImageView
+                    android:id="@+id/cropImageView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:visibility="visible"
+                    app:layout_constraintDimensionRatio="H,16:9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageButton
+                    android:id="@+id/article_banner_remove"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:src="@drawable/ic_close"
+                    tools:ignore="ContentDescription,MissingConstraints"
+                    tools:layout_editor_absoluteX="345dp"
+                    tools:layout_editor_absoluteY="16dp" />
+            </android.support.constraint.ConstraintLayout>
+
+        </FrameLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/text__box_background"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/articleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="16sp"
+                android:background="@android:color/transparent"
+                android:hint="Title"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/montserrat"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:background="@drawable/text__box_background"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="16sp"
+                android:background="@android:color/transparent"
+                android:hint="Short Description"
+                android:textColor="#ff686868"
+                android:textSize="@dimen/text14"
+                android:id="@+id/artcileShortDescription"
+                android:fontFamily="@font/montserrat"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/gray_border"
+            android:orientation="vertical">
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.github.irshulx.Editor
+                    android:layout_width="match_parent"
+                    android:id="@+id/editor"
+                    app:render_type="Editor"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    app:placeholder="Type your text, add pictures and videos link here..."
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    />
+            </ScrollView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:id="@+id/videoFrameLayout"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/video_post_close"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/ic_close"/>
+                <WebView
+                    android:layout_width="match_parent"
+                    android:id="@+id/articleVideoView"
+                    android:layout_height="300dp"
+                    tools:ignore="WebViewLayout" />
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:fitsSystemWindows="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/article_insert_image"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_add_a_photo"
+                    />
+                <ImageButton
+                    android:id="@+id/article_insert_video"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_video"/>
+                <ImageButton
+                    android:id="@+id/article_insert_link"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_insert_link"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:paddingStart="20sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/text__box_background"
+            android:hint="Tags | Separate tags with commas"
+            android:id="@+id/articleTags"
+            android:textSize="@dimen/text14"
+            android:fontFamily="@font/montserrat"
+            android:inputType="text">
+
+        </MultiAutoCompleteTextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp">
+            <Button
+                android:id="@+id/nextArticle"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:background="@drawable/sqr_factor_btn_color"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.NewsFeedFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="15sp"
+        android:background="@color/White"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/newsFeedbtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:text="ALL"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@color/sqr"/>
+        <Button
+            android:id="@+id/whatsRedbtn"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_weight="4"
+            android:layout_marginStart="4sp"
+            android:text="WHAT'S RED?"
+            android:textSize="@dimen/text12"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:background="@color/grey_btn"/>
+
+
+        <Button
+            android:id="@+id/topContributorsRedbtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:layout_marginStart="4sp"
+            android:textSize="@dimen/text12"
+            android:text="TOP CONTRIBUTORS "
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:background="#ffc0c0c0"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

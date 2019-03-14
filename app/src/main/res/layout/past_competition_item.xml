@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="17sp"
+            android:layout_marginStart="10sp"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/past_comp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="Young Designers' Award'18"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/past_comp_start_time_ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#ffb1b1b1"
+                    android:textSize="@dimen/text14"
+                    android:fontFamily="@font/montserrat"
+                    tools:text="23May,2018"/>
+
+            </LinearLayout>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/comp_menu"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/ellipsis"/>-->
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/past_competition_share"
+                android:src="@drawable/ic_share_red"
+                android:background="@color/white"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/past_comp_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/home_banner"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/past_comp_last_submission_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Last Date of Submission: 30/12/18"
+                android:textColor="#ff8f8f8f"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/montserrat"/>
+
+            <TextView
+                android:id="@+id/past_comp_last_reg_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                tools:text="Last Date of Registration: 30/12/18"
+                android:textColor="#ff8f8f8f"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/montserrat"/>
+
+            <TextView
+                android:id="@+id/past_comp_prize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                tools:text="Prizes: Not applicable"
+                android:textColor="#ff8f8f8f"
+                android:textSize="@dimen/text14"
+                android:fontFamily="@font/montserrat"/>
+
+            <TextView
+                android:id="@+id/past_comp_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:textSize="@dimen/text14"
+                tools:text="Type: free"
+                android:textColor="#ff8f8f8f"
+                android:fontFamily="@font/montserrat"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/past_participate"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="13dp"
+                android:background="@color/sqr"
+                android:text="Participate"
+                android:fontFamily="@font/montserrat"
+                android:textAllCaps="false"
+                android:textColor="#fff"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
